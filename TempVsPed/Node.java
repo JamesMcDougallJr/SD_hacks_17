@@ -3,11 +3,11 @@
  * this class defines what a node is in our program
  */
 public class Node {
-  public static double countAppend;
-  public static double totalSpeed;
-  public static double totalCars;
-  public static String ID;
-  public static String previousID;
+  private static double countAppend;
+  private static double totalSpeed;
+  private static double totalCars;
+  private static String ID;
+  private static String previousID;
   /**
    * Default constructor takes as formal arguments the speed of cars, number of cars, and the number of pedestrians.
    */
@@ -22,11 +22,22 @@ public class Node {
       return false;
     }
   }
-  public void appendToNode(double speedOfCar, double numCars, double numPeds) {
+  private void appendToNode(double speedOfCar, double numCars, double numPeds) {
     countAppend++;
     totalSpeed+=speedOfCar;
     totalPeds+=numPeds;
     totalCars+=numCars;
   }
-
+  private double computeDangerScore() {
+    totalSpeed/=countAppend;
+    totalPeds/=countAppend;
+    totalCars/=countAppend;
+    double pedToCarRatio= totalPeds/totalCars;
+    double dangerFactor=(totalSpeed/10) * pedToCarRatio; //The equation is derived from the fact that the higher the ratio of people to cars, the more likely it is for a person to be injured. Additionally, the speed at which the cars are going decreases their ability to stop which increases the risk factor.
+    if(pedToCarRatio > 1 && totalSpeed > 50) {
+      System.out.println("Pedestrian to Car Ratio: " + pedToCarRatio);
+      System.out.println("Average Total Speed: " + totalSpeed);
+      System.out.println("Calculated Danger Factor: " +  dangerFactor);
+    }
+  }
 } //end of class definition
