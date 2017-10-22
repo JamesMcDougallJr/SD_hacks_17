@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 
 public class main {
-
+private static String locationToken;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -16,18 +16,18 @@ public class main {
 		
 		Gson gson = new Gson();
 		Event e = gson.fromJson(dr.getPedestrianData(0), Event.class);
-		locations.add(new Node(e.getContent().get(0).getLocationUid(), e.getContent().get(0).getMeasures().getCarSpeed());
+		locations.add(new Node(e.getContent().get(0).getLocationUid(),
+                            e.getContent().get(0).getMeasures().getCarSpeed(),
+                            e.getContent().get(0).getMeasures().getVehicleCount(),e.getContent().get(0).getMeasures().getNumPeds());
+    locationToken=e.getContent.get(0).getLocationUid();
 		for (int i = 1; i < e.getContent().size(); i++)	{
 /**
  * decide whether the locations has a node with this value
- */
-			if (Locations has the value) {
-				Node.append(speed, number of cars, number of pedestrians);
-			}
-			else {
-				locations.add(new Node(e.getContent(),get(0).getLocationUid(), e.getContent().get(0);
-			}
-
+ */   
+      if(locations.contains(locationToken) {
+        Node.append(speedofcar, numcars , numpeds);
+      }
+         
 			e.getContent().get(i)
 		}
 		
@@ -38,6 +38,10 @@ public class main {
 	
 	ArrayList <Node> sortDangerLevel()	{ 
 		//insert sorting algorithm by descending order
+
+			 if (locations.get(locations.size()/2) !=     ) {
+
+			   Node.append(speed, number of cars, number of peds);
 		return null;
 	}
 }
