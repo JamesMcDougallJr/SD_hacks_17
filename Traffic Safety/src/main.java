@@ -18,7 +18,16 @@ public class main {
 		Event e = gson.fromJson(dr.getPedestrianData(0), Event.class);
 		locations.add(new Node(e.getContent().get(0).getLocationUid(), e.getContent().get(0).getMeasures().getCarSpeed());
 		for (int i = 1; i < e.getContent().size(); i++)	{
-			if () 
+/**
+ * decide whether the locations has a node with this value
+ */
+			if (Locations has the value) {
+				Node.append(speed, number of cars, number of pedestrians);
+			}
+			else {
+				locations.add(new Node(e.getContent(),get(0).getLocationUid(), e.getContent().get(0);
+			}
+
 			e.getContent().get(i)
 		}
 		
