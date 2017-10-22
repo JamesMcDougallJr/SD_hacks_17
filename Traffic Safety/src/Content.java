@@ -12,12 +12,12 @@ public class Content {
     @SerializedName("eventType")
     @Expose
     private String eventType;
-    @SerializedName("timestamp")
-    @Expose
-    private Integer timestamp;
-    @SerializedName("properties")
-    @Expose
-    private Properties properties;
+//    @SerializedName("timestamp")
+//    @Expose
+//    private Integer timestamp;
+//    @SerializedName("properties")
+//    @Expose
+//    private Properties properties;
     @SerializedName("measures")
     @Expose
     private Measures measures;
@@ -46,21 +46,21 @@ public class Content {
         this.eventType = eventType;
     }
 
-    public Integer getTimestamp() {
-        return timestamp;
-    }
+//    public Integer getTimestamp() {
+//        return timestamp;
+//    }
+//
+//    public void setTimestamp(Integer timestamp) {
+//        this.timestamp = timestamp;
+//    }
 
-    public void setTimestamp(Integer timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public Properties getProperties() {
-        return properties;
-    }
-
-    public void setProperties(Properties properties) {
-        this.properties = properties;
-    }
+//    public Properties getProperties() {
+//        return properties;
+//    }
+//
+//    public void setProperties(Properties properties) {
+//        this.properties = properties;
+//    }
 
     public Measures getMeasures() {
         return measures;

@@ -1,0 +1,35 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+import java.util.ArrayList;
+
+import com.google.gson.Gson;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DataRequest dr = new DataRequest();
+		
+		try {
+			Gson gson = new Gson();
+			Event e = gson.fromJson(dr.getPedestrianData(0), Event.class);
+			System.out.println(e);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	
+	void computeDanger(/*insert parameters*/)	{
+		//insert algorithm
+	}
+	
+	ArrayList <Node> sortDangerLevel()	{ 
+		//insert sorting algorithm by descending order
+		return null;
+	}
+}
