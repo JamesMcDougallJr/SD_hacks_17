@@ -44,6 +44,15 @@ public class Node {
     if(pedToCarRatio > 1 && carSpeed > 50) {
     	dangerString = "Really Dangerous";
     }
+		else if (pedToCarRatio > 1 || carSpeed > 50){
+			dangerString = "Dangerous";
+		}
+		else if ((pedToCarRatio < 1 && pedToCarRatio > 0.5) || carSpeed > 35){
+			dangerString = "Mildly Dangerous";
+		}
+		else{
+			dangerString = "Safe";
+		}
 	return;
   }
 } //end of class definition
