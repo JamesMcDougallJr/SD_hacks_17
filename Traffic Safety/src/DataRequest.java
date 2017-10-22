@@ -48,7 +48,7 @@ public class DataRequest {
 
 	public String getVehicleData(int page) {
 		return this.getData(
-				"https://ic-event-service.run.aws-usw02-pr.ice.predix.io/v2/locations/events?eventType=PEDEVT&bbox=32.715675%3A-117.161230%2C32.708498%3A-117.151681&locationType=WALKWAY&startTime=1508456827000&endTime=1508975227000");
+				"https://ic-event-service.run.aws-usw02-pr.ice.predix.io/v2/locations/events?eventType=TFEVT&bbox=32.715675%3A-117.161230%2C32.708498%3A-117.151681&locationType=TRAFFIC_LANE&startTime=1508456827000&endTime=1508975227000");
 	}
 
 	/*
@@ -57,7 +57,7 @@ public class DataRequest {
 	
 	public String getLocationData(int page) {
 		return this.getData(
-				"https://ic-event-service.run.aws-usw02-pr.ice.predix.io/v2/query=" + page + "locations/events?eventType=PEDEVT&bbox=32.715675%3A-117.161230%2C32.708498%3A-117.151681&locationType=WALKWAY&startTime=1508456827000&endTime=1508975227000");
+				"https://ic-metadata-service.run.aws-usw02-pr.ice.predix.io/v2/metadata/assets/CAM-HYP1071-F/locations");
 	}
 
 }
