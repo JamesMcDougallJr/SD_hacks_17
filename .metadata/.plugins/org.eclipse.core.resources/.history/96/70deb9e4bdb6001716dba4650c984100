@@ -1,0 +1,10 @@
+
+import com.google.gson.*;
+
+public class Measures {
+	private int pedestrianCount;
+	private double counter_direction_speed;
+	private int counter_direction_vehicleCount;
+	private double speed;
+	private int vehicleCount;
+}

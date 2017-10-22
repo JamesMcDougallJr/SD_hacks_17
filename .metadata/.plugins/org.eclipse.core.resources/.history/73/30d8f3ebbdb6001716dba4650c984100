@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import com.google.gson.Gson;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Gson gson = new Gson();
+		
+	}
+
+	
+	void computeDanger(/*insert parameters*/)	{
+		//insert algorithm
+	}
+	
+	ArrayList <Node> sortDangerLevel()	{ 
+		//insert sorting algorithm by descending order
+		return null;
+	}
+}

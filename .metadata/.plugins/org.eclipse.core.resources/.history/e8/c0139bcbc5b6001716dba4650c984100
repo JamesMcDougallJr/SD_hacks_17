@@ -1,0 +1,15 @@
+
+import com.google.gson.*;
+
+public class Event{
+
+	 private String locationUid;
+	 private String assetUid;
+	 private String eventType;
+	 private Measures measures;
+	@Override
+	public String toString() {
+		return "Event [locationUid=" + locationUid + ", assetUid=" + assetUid + ", eventType=" + eventType
+				+ ", measures=" + measures.toString() + "]";
+	}
+}
