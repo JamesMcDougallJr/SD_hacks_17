@@ -47,8 +47,9 @@ public class DataRequest {
 	 */
 
 	public String getVehicleData(int page) {
+		String query = "/v2/locations/events?eventType=TFEVT&bbox=32.715675%3A-117.161230%2C32.708498%3A-117.151681&locationType=TRAFFIC_LANE&startTime=1508456827000&endTime=1508975227000"
 		return this.getData(
-				"https://ic-event-service.run.aws-usw02-pr.ice.predix.io/v2/locations/events?eventType=TFEVT&bbox=32.715675%3A-117.161230%2C32.708498%3A-117.151681&locationType=TRAFFIC_LANE&startTime=1508456827000&endTime=1508975227000");
+				"https://ic-event-service.run.aws-usw02-pr.ice.predix.io" );
 	}
 
 	/*
