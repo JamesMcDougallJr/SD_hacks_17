@@ -18,7 +18,8 @@ private static String locationToken;
 		Event e = gson.fromJson(dr.getPedestrianData(0), Event.class);
 		locations.add(new Node(e.getContent().get(0).getLocationUid(),
                             e.getContent().get(0).getMeasures().getCarSpeed(),
-                            e.getContent().get(0).getMeasures().getVehicleCount(),e.getContent().get(0).getMeasures().getNumPeds());
+                            e.getContent().get(0).getMeasures().getVehicleCount(),
+														e.getContent().get(0).getPedestrian().getPedestrianCount());
     locationToken=e.getContent.get(0).getLocationUid();
 		for (int i = 1; i < e.getContent().size(); i++)	{
 /**
